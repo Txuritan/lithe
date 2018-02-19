@@ -1,0 +1,9 @@
+fun main(args : Array<String>) {
+  val times = math({(a, b) => a * b}, 6)
+}
+
+fun math(fn: {(Int, Int) : Int}, b: Int) {
+  try {
+    fn(b, 3)
+  }
+}

@@ -1,0 +1,31 @@
+{#
+  Sadly XML (or other similar file types) is hard to
+  make type safe.
+
+  As such XML in Lithe is quite long winded.
+
+  Unlike JSON, XML has element attributes, which Lithe
+  can't parse and export, so Lithe ingores them
+  entirely.
+#}
+
+{#
+  Lithe structs act like C++ stucts in which they are
+  basicly public value only classes.
+#}
+struct ExampleXML {
+  bool: Boolean
+  number: Int,
+  text: String,
+}
+
+{#
+  Implement the JSON trait
+#}
+impl XML for ExampleXML
+
+println(ExampleJSON {
+  true,
+  43110,
+  "Hello",
+})
