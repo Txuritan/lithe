@@ -1,0 +1,35 @@
+{# Standard Lithe main #}
+fun main() {
+  println(Goodbye())
+}
+
+{#
+  Traits are like classes/structs but can be implemented  onto another class/struct and be called as though it
+  had it in the first place
+
+  They contain a fuction or set of functions that can be
+  called and/or overwritten when needed
+
+  Every function inside a trait is implemented as public
+#}
+trait ToString {
+  {#
+    As our Goodbye class doesn't have a toString this
+    will implement it for us
+  #}
+  fun toString() -> String {
+    "Hello World!"
+  }
+}
+
+class Goodbye {
+  {#
+    We are telling the constructor to return a String
+    instead of a instance
+  #}
+  constructor() -> String {
+    "Goodbye"
+  }
+}
+
+impl ToString for Goodbye
