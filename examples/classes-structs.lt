@@ -1,0 +1,59 @@
+{# Standard Lithe main #}
+fun main() {
+  let cHello = CHello()
+  println(cHello.world())
+
+  let sHello = SHello()
+  println(sHello.world())
+}
+
+{#
+  Classes and stricts are able to have public,
+  private, protected, and static functions
+#}
+class CHello {
+  {#
+    By default all class functions are private and have
+    to have a 'pub' key if you want to access it from a
+    instance
+
+    To make a function static you add the 'sta' key,
+    the 'pub' key will be automaticly added but you can
+    add it yourself if need be
+  #}
+  pub fun world() -> String {
+    "Hello World!"
+  }
+}
+
+{#
+  Structs don't require a body like a class only when
+  you wish to store variable or use it for data schema
+#}
+struct SHello
+
+{#
+  By default any functions added to a struct using the
+  'impl' key are make static
+
+  It make a struct like a class you need to implement
+  the constrcutor manually
+#}
+impl SHello {
+  {#
+    Constructors by default returns what ever struct or
+    class that it is a child of unless stated
+    otherwise
+  #}
+  constrcutor() {
+    SHello
+  }
+
+  {#
+    Yoy have to explictly sya that the function being
+    implemented is public using the 'pub' key
+  #}
+  pub fun hello() -> String {
+    "Hello World!"
+  }
+}
