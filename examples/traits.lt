@@ -4,7 +4,8 @@ fun main() {
 }
 
 {#
-  Traits are like classes/structs but can be implemented  onto another class/struct and be called as though it
+  Traits are like classes/structs but can be implemented
+  onto another class/struct and be called as though it
   had it in the first place
 
   They contain a fuction or set of functions that can be
