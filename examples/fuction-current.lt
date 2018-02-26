@@ -7,7 +7,8 @@ fun main() {
 }
 
 {#
-  Function can gain access to objects without them ever needed to be passed as
+  Function can gain access to objects without them ever 
+  needed to be passed as
   parameters
 
   The fuction return must come after any passed objects
