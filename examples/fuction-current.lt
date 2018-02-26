@@ -1,5 +1,5 @@
 {# Standard Lithe main #}
-fun main(args : Array<String>) {
+fun main() {
   let hello = "Hello"
   let world - "World"
 

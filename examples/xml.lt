@@ -24,8 +24,10 @@ struct ExampleXML {
 #}
 impl XML for ExampleXML
 
-println(ExampleJSON {
-  true,
-  43110,
-  "Hello",
-})
+fun main() {
+  println(ExampleJSON {
+    true,
+    43110,
+    "Hello",
+  })
+}

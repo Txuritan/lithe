@@ -20,8 +20,10 @@ struct ExampleJSON {
 #}
 impl JSON for ExampleJSON
 
-println(ExampleJSON {
-  true,
-  43110,
-  "Hello",
-})
+fun main() {
+  println(ExampleJSON {
+    true,
+    43110,
+    "Hello",
+  })
+}
