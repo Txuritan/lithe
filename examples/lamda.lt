@@ -1,9 +1,18 @@
+{# Standard Lithe main #}
 fun main() {
-  val times = math({(a, b) => a * b}, 6)
+  let times = math({(a, b) -> a * b}, 6)
 }
 
-fun math(fn: {(Int, Int) : Int}, b: Int) {
-  try {
-    fn(b, 3)
-  }
+{#
+  Lamdas allow us to pass fuctions and classes as
+  parameters to other fuctions and classes and call
+  them when needed
+
+  Just like normal functions lamda functions can use
+  current objects, theres no reasoj for it but you can
+  do it
+#}
+fun math(fn: {(Int, Int) -> Int}, b: Int) {
+  {# Call the lamda function #}
+  fn(b, 3)
 }
