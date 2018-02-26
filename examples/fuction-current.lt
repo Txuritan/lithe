@@ -1,0 +1,17 @@
+{# Standard Lithe main #}
+fun main(args : Array<String>) {
+  let hello = "Hello"
+  let world - "World"
+
+  println(hello())
+}
+
+{#
+  Function can gain access to objects without them ever needed to be passed as
+  parameters
+
+  The fuction return must come after any passed objects
+#}
+fun hello() ~ hello: String, world: String -> String {
+  hello + " " + world + "!"
+}

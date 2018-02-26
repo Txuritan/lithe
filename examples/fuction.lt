@@ -1,0 +1,10 @@
+{# Standard Lithe main #}
+fun main(args : Array<String>) {
+  println(hello())
+}
+
+{# A simple function that returns a String #}
+fun hello() -> String {
+  {# Returns don't require an explicit return key #}
+  "Hello World!"
+}
